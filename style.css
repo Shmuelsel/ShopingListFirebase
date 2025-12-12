@@ -4,6 +4,7 @@ html, body {
     font-family: 'Rubik', sans-serif;
     background-color: #EEF0F4;
     user-select: none;
+    touch-action: manipulation;
 }
 
 .container {
