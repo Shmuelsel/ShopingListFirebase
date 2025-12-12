@@ -43,6 +43,9 @@ const DOM = {
 
 DOM.addBottunEl.addEventListener('click', () => {
     let inputFieldValue = DOM.inputFieldEl.value;
+    if (inputFieldValue === '') {
+        return;
+    }
     push(shoppingListRef, inputFieldValue);
     console.log(inputFieldValue);
     emptyInputField();
